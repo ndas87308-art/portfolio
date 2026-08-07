@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="A cinematic animated portfolio hero.">
+  <title>Motion Studio — Animated Hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="animated.css">
+</head>
+<body>
+  <main class="hero">
+    <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+      <source src="rotation.mp4" type="video/mp4">
+    </video>
+    <div class="video-shade" aria-hidden="true"></div>
+    <div class="grid" aria-hidden="true"></div>
+    <div class="aurora aurora-one" aria-hidden="true"></div>
+    <div class="aurora aurora-two" aria-hidden="true"></div>
+
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">Nayan<span>.</span></a>
+      <span class="status"><i></i> Available for new work</span>
+    </nav>
+
+    <section class="hero-content">
+      <div class="intro">
+        <p class="eyebrow">Creative technologist · 2026</p>
+        <h1>Ideas with<br><em>motion.</em></h1>
+        <p class="description">A cinematic space for digital work, thoughtful interfaces, and products made to feel alive.</p>
+        <a class="explore" href="#showcase">Explore the experience <span>↗</span></a>
+      </div>
+
+      <div class="showcase" id="showcase" aria-label="Animated portfolio images">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="card-stage">
+          <article class="image-card" aria-live="polite">
+            <img class="hero-image" src="n (2).jpg" alt="Artwork">
+            <div class="image-overlay"></div>
+          </article>
+        </div>
+        <p class="hint">Drag your cursor around the frame</p>
+      </div>
+    </section>
+
+    <div class="scroll-cue"><span></span> Scroll to discover</div>
+  </main>
+  <script src="animated.js"></script>
+</body>
+</html>
