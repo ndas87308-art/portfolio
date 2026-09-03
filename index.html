@@ -1,86 +1,732 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <meta name="theme-color" content="#071426">
-  <meta name="description" content="Nayan Jyoti Das — frontend developer, designer, and creative freelancer from Assam, India.">
+
+  <meta
+    name="description"
+    content="Nayan Jyoti Das — frontend developer, designer, and creative freelancer from Assam, India."
+  >
+
   <title>Nayan Jyoti Das | Portfolio</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Boxicons -->
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- 3D Hero CSS -->
   <link rel="stylesheet" href="three-hero.css">
 </head>
+
+
 <body>
-  <div class="loader" aria-label="Loading"><span></span><b>Loading portfolio</b></div>
-  <video class="site-video" autoplay muted loop playsinline poster="n (4).jpg" aria-hidden="true"><source src="portfolio-background.mp4" type="video/mp4"></video>
-  <div class="site-shade" aria-hidden="true"></div><div class="grid" aria-hidden="true"></div>
+
+  <!-- LOADER -->
+
+  <div
+    class="loader"
+    aria-label="Loading"
+  >
+    <span></span>
+    <b>Loading portfolio</b>
+  </div>
+
+
+  <!-- BACKGROUND VIDEO -->
+
+  <video
+    class="site-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="n (4).jpg"
+    aria-hidden="true"
+  >
+    <source
+      src="portfolio-background.mp4"
+      type="video/mp4"
+    >
+  </video>
+
+  <div
+    class="site-shade"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="grid"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- HEADER -->
 
   <header class="header">
-    <a href="#home" class="logo">Nayan<span>.</span></a>
-    <nav id="site-nav" aria-label="Primary navigation">
-      <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+
+    <a
+      href="#home"
+      class="logo"
+    >
+      Nayan<span>.</span>
+    </a>
+
+
+    <!-- NAVIGATION -->
+
+    <nav
+      id="site-nav"
+      aria-label="Primary navigation"
+    >
+
+      <a
+        href="#home"
+        class="active"
+      >
+        Home
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#skills">
+        Skills
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+
+      <!-- ADMIN LOGIN -->
+
+      <a
+        href="admin/login.html"
+        class="admin-login-link"
+      >
+        <i class="bx bx-lock-alt"></i>
+        Admin
+      </a>
+
     </nav>
-    <button class="menu" aria-label="Open navigation" aria-expanded="false"><i class="bx bx-menu"></i></button>
+
+
+    <!-- MOBILE MENU -->
+
+    <button
+      class="menu"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
+      <i class="bx bx-menu"></i>
+    </button>
+
   </header>
 
+
+  <!-- MAIN -->
+
   <main>
-    <section class="hero section" id="home">
-      <div class="car-experience" aria-hidden="true">
+
+
+    <!-- HERO -->
+
+    <section
+      class="hero section"
+      id="home"
+    >
+
+      <div
+        class="car-experience"
+        aria-hidden="true"
+      >
+
         <canvas id="car-canvas"></canvas>
-        <p id="car-status" class="car-status">Preparing 3D experience…</p>
+
+        <p
+          id="car-status"
+          class="car-status"
+        >
+          Preparing 3D experience…
+        </p>
+
       </div>
+
+
       <div class="hero-copy reveal">
-        <p class="eyebrow">Frontend developer · Creative freelancer</p>
-        <h1>I build digital<br><em>experiences.</em></h1>
-        <p class="lead">I'm Nayan Jyoti Das, a Computer Science student from Assam creating responsive websites, refined interfaces, and visual content that help ideas stand out.</p>
-        <div class="actions"><a class="button primary" href="#contact">Let's work together <i class="bx bx-right-arrow-alt"></i></a><a class="button secondary" href="Resume.pdf" download><i class="bx bx-download"></i> Download CV</a></div>
-        <div class="socials" aria-label="Social profiles"><a href="mailto:ndas87308@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a><a href="https://wa.me/918753922172" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a><a href="https://profile.indeed.com/p/nayanjyotid-vd34108" target="_blank" rel="noopener" aria-label="Indeed"><i class="bx bx-briefcase"></i></a></div>
-      </div>
-      <div class="profile-wrap reveal">
-        <div class="profile-ring"></div><img src="pro.png" alt="Nayan Jyoti Das" class="profile-photo">
-        <div class="availability-card"><i class="bx bx-badge-check"></i><span>Open to freelance<br><b>& internships</b></span></div>
-      </div>
-    </section>
 
-    <section class="section section-surface" id="about">
-      <div class="section-heading reveal"><p class="eyebrow">About me</p><h2>Curious by nature.<br>Focused by design.</h2></div>
-      <div class="about-layout">
-        <img class="about-photo reveal" src="nature.jpg" alt="A calm nature scene">
-        <div class="about-copy reveal"><p>I'm a Computer Science student who enjoys building modern web experiences, learning new technologies, editing video, and turning early ideas into useful digital products.</p><p>My goal is to grow as a software engineer and entrepreneur while helping people and businesses present their best work online.</p>
-          <div class="details"><div><small>Based in</small><b>Assam, India</b></div><div><small>Education</small><b>B.Sc Computer Science</b></div><div><small>Languages</small><b>English · Hindi · Assamese</b></div><div><small>Email</small><b>ndas87308@gmail.com</b></div></div>
+        <p class="eyebrow">
+          Frontend developer · Creative freelancer
+        </p>
+
+        <h1>
+          I build digital<br>
+          <em>experiences.</em>
+        </h1>
+
+        <p class="lead">
+          I'm Nayan Jyoti Das, a Computer Science student from Assam
+          creating responsive websites, refined interfaces, and visual
+          content that help ideas stand out.
+        </p>
+
+
+        <div class="actions">
+
+          <a
+            class="button primary"
+            href="#contact"
+          >
+            Let's work together
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+
+
+          <a
+            class="button secondary"
+            href="Resume.pdf"
+            download
+          >
+            <i class="bx bx-download"></i>
+            Download CV
+          </a>
+
         </div>
+
+
+        <div
+          class="socials"
+          aria-label="Social profiles"
+        >
+
+          <a
+            href="mailto:ndas87308@gmail.com"
+            aria-label="Email"
+          >
+            <i class="bx bx-envelope"></i>
+          </a>
+
+          <a
+            href="https://wa.me/918753922172"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+
+          <a
+            href="https://profile.indeed.com/p/nayanjyotid-vd34108"
+            target="_blank"
+            rel="noopener"
+            aria-label="Indeed"
+          >
+            <i class="bx bx-briefcase"></i>
+          </a>
+
+        </div>
+
       </div>
+
+
+      <div class="profile-wrap reveal">
+
+        <div class="profile-ring"></div>
+
+        <img
+          src="pro.png"
+          alt="Nayan Jyoti Das"
+          class="profile-photo"
+        >
+
+        <div class="availability-card">
+
+          <i class="bx bx-badge-check"></i>
+
+          <span>
+            Open to freelance<br>
+            <b>& internships</b>
+          </span>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <section class="section" id="skills">
-      <div class="section-heading reveal"><p class="eyebrow">Capabilities</p><h2>Tools for thoughtful<br>digital work.</h2></div>
+
+    <!-- ABOUT -->
+
+    <section
+      class="section section-surface"
+      id="about"
+    >
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          About me
+        </p>
+
+        <h2>
+          Curious by nature.<br>
+          Focused by design.
+        </h2>
+
+      </div>
+
+
+      <div class="about-layout">
+
+        <img
+          class="about-photo reveal"
+          src="nature.jpg"
+          alt="A calm nature scene"
+        >
+
+        <div class="about-copy reveal">
+
+          <p>
+            I'm a Computer Science student who enjoys building modern
+            web experiences, learning new technologies, editing video,
+            and turning early ideas into useful digital products.
+          </p>
+
+          <p>
+            My goal is to grow as a software engineer and entrepreneur
+            while helping people and businesses present their best work
+            online.
+          </p>
+
+
+          <div class="details">
+
+            <div>
+              <small>Based in</small>
+              <b>Assam, India</b>
+            </div>
+
+            <div>
+              <small>Education</small>
+              <b>B.Sc Computer Science</b>
+            </div>
+
+            <div>
+              <small>Languages</small>
+              <b>English · Hindi · Assamese</b>
+            </div>
+
+            <div>
+              <small>Email</small>
+              <b>ndas87308@gmail.com</b>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section
+      class="section"
+      id="skills"
+    >
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          Capabilities
+        </p>
+
+        <h2>
+          Tools for thoughtful<br>
+          digital work.
+        </h2>
+
+      </div>
+
+
       <div class="skill-grid">
-        <article class="skill-card reveal"><i class="bx bxl-html5"></i><h3>HTML5</h3><p>Semantic, accessible page structure.</p></article><article class="skill-card reveal"><i class="bx bxl-css3"></i><h3>CSS3</h3><p>Responsive UI, layout, and motion.</p></article><article class="skill-card reveal"><i class="bx bxl-javascript"></i><h3>JavaScript</h3><p>Interactive, dynamic web experiences.</p></article><article class="skill-card reveal"><i class="bx bxl-python"></i><h3>Python</h3><p>Automation and programming foundations.</p></article><article class="skill-card reveal"><i class="bx bx-palette"></i><h3>Design</h3><p>Canva graphics and visual direction.</p></article><article class="skill-card reveal"><i class="bx bx-video"></i><h3>Video editing</h3><p>Polished reels, shorts, and edits.</p></article>
+
+        <article class="skill-card reveal">
+
+          <i class="bx bxl-html5"></i>
+
+          <h3>HTML5</h3>
+
+          <p>
+            Semantic, accessible page structure.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card reveal">
+
+          <i class="bx bxl-css3"></i>
+
+          <h3>CSS3</h3>
+
+          <p>
+            Responsive UI, layout, and motion.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card reveal">
+
+          <i class="bx bxl-javascript"></i>
+
+          <h3>JavaScript</h3>
+
+          <p>
+            Interactive, dynamic web experiences.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card reveal">
+
+          <i class="bx bxl-python"></i>
+
+          <h3>Python</h3>
+
+          <p>
+            Automation and programming foundations.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card reveal">
+
+          <i class="bx bx-palette"></i>
+
+          <h3>Design</h3>
+
+          <p>
+            Canva graphics and visual direction.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card reveal">
+
+          <i class="bx bx-video"></i>
+
+          <h3>Video editing</h3>
+
+          <p>
+            Polished reels, shorts, and edits.
+          </p>
+
+        </article>
+
       </div>
+
     </section>
 
-    <section class="section section-surface" id="projects">
-      <div class="section-heading reveal"><p class="eyebrow">Selected work</p><h2>Built with purpose,<br>made to perform.</h2></div>
+
+    <!-- PROJECTS -->
+
+    <section
+      class="section section-surface"
+      id="projects"
+    >
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          Selected work
+        </p>
+
+        <h2>
+          Built with purpose,<br>
+          made to perform.
+        </h2>
+
+      </div>
+
+
       <div class="project-grid">
-        <article class="project-card reveal"><div class="project-icon"><i class="bx bx-user-circle"></i></div><p class="project-type">Portfolio</p><h3>Personal Portfolio</h3><p>A responsive personal website designed to clearly showcase skills, services, and projects.</p><a href="#home">View site <i class="bx bx-up-arrow-alt"></i></a></article>
-        <article class="project-card reveal"><div class="project-icon"><i class="bx bx-brain"></i></div><p class="project-type">Learning project</p><h3>AI Exploration</h3><p>A practical project exploring automation and machine-learning concepts through hands-on work.</p><a href="#contact">Let's discuss <i class="bx bx-up-arrow-alt"></i></a></article>
-        <article class="project-card reveal"><div class="project-icon"><i class="bx bx-line-chart"></i></div><p class="project-type">Web app</p><h3>Trading Track Recorder</h3><p>A focused journal for tracking trades, reviewing decisions, and monitoring growth.</p><a href="https://journal-nine-beta.vercel.app/" target="_blank" rel="noopener">Open demo <i class="bx bx-up-arrow-alt"></i></a></article>
+
+
+        <!-- PERSONAL PORTFOLIO -->
+
+        <article class="project-card reveal">
+
+          <div class="project-icon">
+            <i class="bx bx-user-circle"></i>
+          </div>
+
+          <p class="project-type">
+            Portfolio
+          </p>
+
+          <h3>
+            Personal Portfolio
+          </h3>
+
+          <p>
+            A responsive personal website designed to clearly showcase
+            skills, services, and projects.
+          </p>
+
+          <a href="#home">
+            View site
+            <i class="bx bx-up-arrow-alt"></i>
+          </a>
+
+        </article>
+
+
+        <!-- BLACK DRAGON ARMWRESTLING CLUB -->
+
+        <article class="project-card reveal">
+
+          <div class="project-icon">
+            <i class="bx bx-trophy"></i>
+          </div>
+
+          <p class="project-type">
+            Sports · Club Website
+          </p>
+
+          <h3>
+            Black Dragon Armwrestling Club
+          </h3>
+
+          <p>
+            A bold, high-energy armwrestling club website built to showcase
+            athletes, competitions, training, and the fighting spirit of
+            the club.
+          </p>
+
+          <a
+            href="https://dragonarmwrestlingclub.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit club website
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+
+        </article>
+
+
+        <!-- TRADING TRACK RECORDER -->
+
+        <article class="project-card reveal">
+
+          <div class="project-icon">
+            <i class="bx bx-line-chart"></i>
+          </div>
+
+          <p class="project-type">
+            Web app
+          </p>
+
+          <h3>
+            Trading Track Recorder
+          </h3>
+
+          <p>
+            A focused journal for tracking trades, reviewing decisions,
+            and monitoring growth.
+          </p>
+
+          <a
+            href="https://journal-nine-beta.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            Open demo
+            <i class="bx bx-up-arrow-alt"></i>
+          </a>
+
+        </article>
+
       </div>
+
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="contact-copy reveal"><p class="eyebrow">Get in touch</p><h2>Have a project<br>in mind?</h2><p>Whether you need a website, creative design, or help making an idea feel more polished, I’d be glad to hear from you.</p><a href="mailto:ndas87308@gmail.com">ndas87308@gmail.com <i class="bx bx-right-arrow-alt"></i></a></div>
-      <form class="contact-form reveal" action="https://formsubmit.co/ndas87308@gmail.com" method="POST"><label>Your name<input name="Name" type="text" placeholder="Enter your name" required></label><label>Email address<input name="Email" type="email" placeholder="you@example.com" required></label><label>Tell me about the project<textarea name="Message" placeholder="What would you like to create?" required></textarea></label><input type="hidden" name="_captcha" value="false"><button type="submit">Send message <i class="bx bx-send"></i></button></form>
+
+    <!-- CONTACT -->
+
+    <section
+      class="section contact-section"
+      id="contact"
+    >
+
+      <div class="contact-copy reveal">
+
+        <p class="eyebrow">
+          Get in touch
+        </p>
+
+        <h2>
+          Have a project<br>
+          in mind?
+        </h2>
+
+        <p>
+          Whether you need a website, creative design, or help making
+          an idea feel more polished, I’d be glad to hear from you.
+        </p>
+
+        <a href="mailto:ndas87308@gmail.com">
+          ndas87308@gmail.com
+          <i class="bx bx-right-arrow-alt"></i>
+        </a>
+
+      </div>
+
+
+      <form
+        class="contact-form reveal"
+        action="https://formsubmit.co/ndas87308@gmail.com"
+        method="POST"
+      >
+
+        <label>
+          Your name
+
+          <input
+            name="Name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          >
+        </label>
+
+
+        <label>
+          Email address
+
+          <input
+            name="Email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          >
+        </label>
+
+
+        <label>
+          Tell me about the project
+
+          <textarea
+            name="Message"
+            placeholder="What would you like to create?"
+            required
+          ></textarea>
+        </label>
+
+
+        <input
+          type="hidden"
+          name="_captcha"
+          value="false"
+        >
+
+
+        <button type="submit">
+          Send message
+          <i class="bx bx-send"></i>
+        </button>
+
+      </form>
+
     </section>
+
   </main>
-  <footer><a class="logo" href="#home">Nayan<span>.</span></a><p>Designed and built with care.</p><p>© 2026 Nayan Jyoti Das</p></footer>
-  <a class="quick-whatsapp" href="https://wa.me/918753922172" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <a
+      class="logo"
+      href="#home"
+    >
+      Nayan<span>.</span>
+    </a>
+
+    <p>
+      Designed and built with care.
+    </p>
+
+    <p>
+      © 2026 Nayan Jyoti Das
+    </p>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+
+  <a
+    class="quick-whatsapp"
+    href="https://wa.me/918753922172"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="bx bxl-whatsapp"></i>
+  </a>
+
+
+  <!-- JAVASCRIPT -->
+
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
-  <script type="module" src="three-hero.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    defer
+  ></script>
+
+  <script
+    type="module"
+    src="three-hero.js"
+  ></script>
+
 </body>
+
 </html>
